@@ -59,7 +59,7 @@ class LogStash::Outputs::HangoutChat < LogStash::Outputs::Base
     uri = URI.parse(url)
     request = Net::HTTP::Post.new(uri)
     request['Content-Type'] = "application/json"
-    request.body = {text: message}
+    request.body = {text: message}.to_json
     response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
       http.request(request)
     end
