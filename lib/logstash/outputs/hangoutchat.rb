@@ -8,7 +8,7 @@ require 'json'
 # An example output that does nothing.
 class LogStash::Outputs::HangoutChat < LogStash::Outputs::Base
   
-  config_name "hangout-chat"
+  config_name "hangoutchat"
   
   # the access token, cloud_id and conversation id of the stride room
   config :webhook, :validate => :string, :required => true

@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = 'logstash-output-hangout-chat'
+  s.name = 'logstash-output-hangoutchat'
   s.version = '0.0.1'
   s.licenses = ['Apache-2.0']
   s.summary = "This logstash ouput plugin allows posting messages to google hangouts chat rooms"
